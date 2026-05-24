@@ -1,0 +1,1412 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | Mundo Mascota Local</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand">
+          <img
+            src="img/logo-mundo-mascota.png"
+            alt="Logo Mundo Mascota Local"
+            class="brand__logo"
+          />
+          <span class="brand__name">Mundo Mascota Local</span>
+        </a>
+
+        <button class="navbar__toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="navbar__menu">
+          <li><a href="index.html" class="navbar__link">Inicio</a></li>
+          <li>
+            <a href="servicios.html" class="navbar__link active">Servicios</a>
+          </li>
+          <li><a href="agendar.html" class="navbar__link">Agendar cita</a></li>
+          <li><a href="login.html" class="navbar__link">Ingresar</a></li>
+          <li>
+            <a href="registro.html" class="btn btn--primary">Registrarse</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero--services">
+        <div class="container services-hero-grid">
+          <div class="page-hero__content">
+            <span class="eyebrow">Servicios para mascotas</span>
+            <h1>Todo lo que tu mascota necesita, en un solo lugar.</h1>
+            <p>
+              Explora servicios locales de salud, cuidado, higiene, transporte y
+              acompañamiento. Elige una categoría, compara comercios y
+              selecciona exactamente lo que deseas para tu mascota.
+            </p>
+          </div>
+
+          <div class="services-hero-image">
+            <img
+              src="img/hero-servicios-mascotas.png"
+              alt="Perro y gato en Mundo Mascota Local"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section service-categories-section">
+        <div class="container">
+          <div class="section-heading services-heading">
+            <span class="eyebrow">Categorías principales</span>
+            <h2>Servicios disponibles en Mundo Mascota Local</h2>
+            <p>
+              Cada categoría agrupa comercios locales verificados y opciones
+              específicas para que puedas elegir el servicio más adecuado según
+              la necesidad de tu mascota.
+            </p>
+          </div>
+
+          <div class="service-category-layout">
+            <div class="service-category-row service-category-row--top">
+              <article class="service-category-card">
+                <div class="service-category-card__image">
+                  <img
+                    src="img/peluqueria.jpg"
+                    alt="Peluquería para mascotas"
+                  />
+                </div>
+
+                <div class="service-category-card__body">
+                  <span class="service-category-card__label"
+                    >Higiene y estética</span
+                  >
+                  <h3>Peluquería y baño</h3>
+                  <p>
+                    Baño general, corte de pelo, arreglo de uñas, limpieza de
+                    oídos, cepillado y cuidado estético para mantener a tu
+                    mascota limpia, cómoda y saludable.
+                  </p>
+                  <button
+                    class="btn btn--primary open-service-modal"
+                    data-modal="modal-peluqueria"
+                  >
+                    Elegir servicio <span>›</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="service-category-card">
+                <div class="service-category-card__image">
+                  <img src="img/veterinaria.jpg" alt="Salud veterinaria" />
+                </div>
+                <div class="service-category-card__body">
+                  <span class="service-category-card__label"
+                    >Salud veterinaria</span
+                  >
+                  <h3>Consulta veterinaria</h3>
+                  <p>
+                    Atención médica básica, valoración general, controles
+                    preventivos, vacunación, revisión de historia clínica y
+                    seguimiento del estado de salud.
+                  </p>
+                  <button
+                    class="btn btn--primary open-service-modal"
+                    data-modal="modal-veterinaria"
+                  >
+                    Elegir servicio <span>›</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="service-category-card">
+                <div class="service-category-card__image">
+                  <img src="img/guarderia.jpg" alt="Guardería mascotas" />
+                </div>
+                <div class="service-category-card__body">
+                  <span class="service-category-card__label"
+                    >Cuidado y estadía</span
+                  >
+                  <h3>Guardería y estadía</h3>
+                  <p>
+                    Cuidado por horas, jornada completa, estadía nocturna,
+                    alimentación supervisada, recreación y acompañamiento en
+                    espacios seguros.
+                  </p>
+                  <button
+                    class="btn btn--primary open-service-modal"
+                    data-modal="modal-guarderia"
+                  >
+                    Elegir servicio <span>›</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="service-category-card">
+                <div class="service-category-card__image">
+                  <img src="img/examenes.jpg" alt="examenes veterinarios" />
+                </div>
+                <div class="service-category-card__body">
+                  <span class="service-category-card__label"
+                    >Apoyo diagnóstico</span
+                  >
+                  <h3>Exámenes básicos</h3>
+                  <p>
+                    Consulta, registro y entrega de resultados simples asociados
+                    a controles veterinarios, seguimiento clínico básico u
+                    orientación profesional.
+                  </p>
+                  <button
+                    class="btn btn--primary open-service-modal"
+                    data-modal="modal-examenes"
+                  >
+                    Elegir servicio <span>›</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+
+            <div class="service-category-row service-category-row--bottom">
+              <article class="service-category-card">
+                <div class="service-category-card__image">
+                  <img
+                    src="img/funebres.jpg"
+                    alt="Servicios fúnebres para mascotas"
+                  />
+                </div>
+                <div class="service-category-card__body">
+                  <span class="service-category-card__label"
+                    >Acompañamiento</span
+                  >
+                  <h3>Servicios fúnebres</h3>
+                  <p>
+                    Servicios de despedida, cremación, transporte, entrega de
+                    cenizas y acompañamiento respetuoso para familias que desean
+                    cerrar el ciclo con dignidad.
+                  </p>
+                  <button
+                    class="btn btn--primary open-service-modal"
+                    data-modal="modal-funebres"
+                  >
+                    Elegir servicio <span>›</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="service-category-card">
+                <div class="service-category-card__image">
+                  <img
+                    src="img/adiestramiento.jpg"
+                    alt="Entrenamiento para mascotas"
+                  />
+                </div>
+                <div class="service-category-card__body">
+                  <span class="service-category-card__label"
+                    >Educación y conducta</span
+                  >
+                  <h3>Adiestramiento</h3>
+                  <p>
+                    Entrenamiento básico y avanzado, socialización, obediencia,
+                    corrección de conducta y acompañamiento para mejorar la
+                    convivencia.
+                  </p>
+                  <button
+                    class="btn btn--primary open-service-modal"
+                    data-modal="modal-adiestramiento"
+                  >
+                    Elegir servicio <span>›</span>
+                  </button>
+                </div>
+              </article>
+
+              <article class="service-category-card">
+                <div class="service-category-card__image">
+                  <img
+                    src="img/transporte.jpg"
+                    alt="transporte para mascotas"
+                  />
+                </div>
+                <div class="service-category-card__body">
+                  <span class="service-category-card__label"
+                    >Movilidad segura</span
+                  >
+                  <h3>Transporte de mascotas</h3>
+                  <p>
+                    Traslados programados hacia veterinarias, guarderías,
+                    peluquerías, aeropuertos u otros destinos, con manejo seguro
+                    para mascotas.
+                  </p>
+                  <button
+                    class="btn btn--primary open-service-modal"
+                    data-modal="modal-transporte"
+                  >
+                    Elegir servicio <span>›</span>
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="services-trust-banner">
+            <p>
+              📍 Todos los servicios son ofrecidos por comercios locales
+              verificados.
+            </p>
+            <p>
+              🛡️ Comercios verificados · Atención local · Servicios
+              especializados
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL PELUQUERÍA -->
+    <div class="service-modal" id="modal-peluqueria" aria-hidden="true">
+      <div class="service-modal__overlay close-service-modal"></div>
+
+      <section class="service-modal__content">
+        <button class="service-modal__close close-service-modal">×</button>
+
+        <div class="modal-inner">
+          <div class="service-modal__header">
+            <span class="eyebrow">Peluquería y baño</span>
+            <h2>Personaliza el servicio para tu mascota</h2>
+            <p>
+              Elige el comercio, selecciona los servicios y revisa el valor
+              estimado antes de agendar.
+            </p>
+          </div>
+
+          <div class="modal-steps">
+            <span class="modal-step is-active" data-step-indicator="1"
+              >1. Comercio</span
+            >
+            <span class="modal-step" data-step-indicator="2">2. Servicios</span>
+          </div>
+
+          <!-- PASO 1 -->
+          <div class="modal-step-panel is-active" data-step="1">
+            <div class="modal-section-title">
+              <h3>Elige el comercio</h3>
+              <span>Selecciona una opción</span>
+            </div>
+
+            <div class="business-selector">
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="peluqueria-comercio"
+                  value="Peluquería Huellitas"
+                  checked
+                />
+                <div class="business-option__content">
+                  <strong>Peluquería Huellitas</strong>
+                  <span>800 m · Disponible hoy · ★★★★☆ 4.6</span>
+                  <small
+                    >Especialistas en baño, corte y cuidado estético.</small
+                  >
+                </div>
+              </label>
+
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="peluqueria-comercio"
+                  value="PetStyle Grooming"
+                />
+                <div class="business-option__content">
+                  <strong>PetStyle Grooming</strong>
+                  <span>1.4 km · Agenda disponible · ★★★★★ 4.8</span>
+                  <small
+                    >Atención personalizada para razas pequeñas y
+                    medianas.</small
+                  >
+                </div>
+              </label>
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary close-service-modal">
+                Cancelar
+              </button>
+              <button class="btn btn--primary modal-next-step" type="button">
+                Continuar
+              </button>
+            </div>
+          </div>
+
+          <!-- PASO 2 -->
+          <div class="modal-step-panel" data-step="2">
+            <div class="modal-section-title">
+              <h3>Selecciona servicios</h3>
+              <span>Puedes elegir varios</span>
+            </div>
+
+            <div class="priced-services-list">
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="35000"
+                  checked
+                />
+                <div>
+                  <strong>Baño general</strong>
+                  <span>Limpieza completa, secado y cuidado básico.</span>
+                </div>
+                <b>$35.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="25000"
+                />
+                <div>
+                  <strong>Corte de pelo</strong>
+                  <span>Corte según tipo de pelaje y necesidad.</span>
+                </div>
+                <b>$25.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="12000"
+                />
+                <div>
+                  <strong>Arreglo de uñas</strong>
+                  <span>Corte y limado seguro de uñas.</span>
+                </div>
+                <b>$12.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="10000"
+                />
+                <div>
+                  <strong>Limpieza de oídos</strong>
+                  <span>Higiene externa y revisión básica.</span>
+                </div>
+                <b>$10.000</b>
+              </label>
+            </div>
+
+            <div class="modal-total-box">
+              <div>
+                <span>Total estimado</span>
+                <strong class="modal-total-value">$35.000</strong>
+              </div>
+              <small
+                >El valor puede variar según tamaño, raza o condición de la
+                mascota.</small
+              >
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary modal-prev-step" type="button">
+                Volver
+              </button>
+              <button
+                class="btn btn--primary schedule-service-btn"
+                type="button"
+              >
+                Agendar cita
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL VETERINARIA -->
+    <div class="service-modal" id="modal-veterinaria" aria-hidden="true">
+      <div class="service-modal__overlay close-service-modal"></div>
+
+      <section class="service-modal__content">
+        <button class="service-modal__close close-service-modal">×</button>
+
+        <div class="modal-inner">
+          <div class="service-modal__header">
+            <span class="eyebrow">Consulta veterinaria</span>
+            <h2>Atención médica para tu mascota</h2>
+            <p>Selecciona la veterinaria y el tipo de servicio requerido.</p>
+          </div>
+
+          <div class="modal-steps">
+            <span class="modal-step is-active" data-step-indicator="1"
+              >1. Veterinaria</span
+            >
+            <span class="modal-step" data-step-indicator="2">2. Servicios</span>
+          </div>
+
+          <!-- PASO 1 -->
+          <div class="modal-step-panel is-active" data-step="1">
+            <div class="business-selector">
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="veterinaria-comercio"
+                  value="Vida Animal"
+                  checked
+                />
+                <div class="business-option__content">
+                  <strong>Veterinaria Vida Animal</strong>
+                  <span>1.2 km · ★★★★★ 4.8</span>
+                  <small>Consulta general y control preventivo.</small>
+                </div>
+              </label>
+
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="veterinaria-comercio"
+                  value="Mascota Sana"
+                />
+                <div class="business-option__content">
+                  <strong>Centro Mascota Sana</strong>
+                  <span>2.1 km · ★★★★☆ 4.5</span>
+                  <small>Atención integral y vacunación.</small>
+                </div>
+              </label>
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary close-service-modal">
+                Cancelar
+              </button>
+              <button class="btn btn--primary modal-next-step">
+                Continuar
+              </button>
+            </div>
+          </div>
+
+          <!-- PASO 2 -->
+          <div class="modal-step-panel" data-step="2">
+            <div class="priced-services-list">
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="50000"
+                  checked
+                />
+                <div>
+                  <strong>Consulta general</strong>
+                  <span>Revisión completa y diagnóstico básico.</span>
+                </div>
+                <b>$50.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="40000"
+                />
+                <div>
+                  <strong>Control preventivo</strong>
+                  <span>Seguimiento y revisión periódica.</span>
+                </div>
+                <b>$40.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="30000"
+                />
+                <div>
+                  <strong>Vacunación</strong>
+                  <span>Aplicación de vacunas básicas.</span>
+                </div>
+                <b>$30.000</b>
+              </label>
+            </div>
+
+            <div class="modal-total-box">
+              <div>
+                <span>Total estimado</span>
+                <strong class="modal-total-value">$50.000</strong>
+              </div>
+              <small>El valor puede variar según diagnóstico.</small>
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary modal-prev-step">Volver</button>
+              <button
+                class="btn btn--primary schedule-service-btn"
+                type="button"
+              >
+                Agendar cita
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL GUARDERÍA -->
+    <div class="service-modal" id="modal-guarderia" aria-hidden="true">
+      <div class="service-modal__overlay close-service-modal"></div>
+
+      <section class="service-modal__content">
+        <button class="service-modal__close close-service-modal">×</button>
+
+        <div class="modal-inner">
+          <div class="service-modal__header">
+            <span class="eyebrow">Guardería y estadía</span>
+            <h2>Cuidado seguro para tu mascota</h2>
+            <p>
+              Selecciona el comercio y el tipo de estadía o cuidado que
+              necesitas.
+            </p>
+          </div>
+
+          <div class="modal-steps">
+            <span class="modal-step is-active" data-step-indicator="1"
+              >1. Guardería</span
+            >
+            <span class="modal-step" data-step-indicator="2">2. Servicios</span>
+          </div>
+
+          <div class="modal-step-panel is-active" data-step="1">
+            <div class="modal-section-title">
+              <h3>Elige el comercio</h3>
+              <span>Selecciona una opción</span>
+            </div>
+
+            <div class="business-selector">
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="guarderia-comercio"
+                  value="Guardería Patitas Felices"
+                  checked
+                />
+                <div class="business-option__content">
+                  <strong>Guardería Patitas Felices</strong>
+                  <span>1.8 km · Disponible · ★★★★★ 4.9</span>
+                  <small
+                    >Espacios seguros, recreación y cuidado supervisado.</small
+                  >
+                </div>
+              </label>
+
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="guarderia-comercio"
+                  value="Club Mascotas Día Feliz"
+                />
+                <div class="business-option__content">
+                  <strong>Club Mascotas Día Feliz</strong>
+                  <span>2.4 km · Cupos limitados · ★★★★☆ 4.6</span>
+                  <small
+                    >Cuidado por horas, jornada completa y estadía
+                    nocturna.</small
+                  >
+                </div>
+              </label>
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary close-service-modal">
+                Cancelar
+              </button>
+              <button class="btn btn--primary modal-next-step" type="button">
+                Continuar
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-step-panel" data-step="2">
+            <div class="modal-section-title">
+              <h3>Selecciona servicios</h3>
+              <span>Puedes elegir varios</span>
+            </div>
+
+            <div class="priced-services-list">
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="30000"
+                  checked
+                />
+                <div>
+                  <strong>Cuidado por horas</strong>
+                  <span>Acompañamiento temporal y supervisado.</span>
+                </div>
+                <b>$30.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="60000"
+                />
+                <div>
+                  <strong>Jornada completa</strong>
+                  <span>Cuidado durante el día con recreación.</span>
+                </div>
+                <b>$60.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="90000"
+                />
+                <div>
+                  <strong>Estadía nocturna</strong>
+                  <span>Alojamiento temporal con supervisión.</span>
+                </div>
+                <b>$90.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="15000"
+                />
+                <div>
+                  <strong>Alimentación supervisada</strong>
+                  <span>Suministro controlado de alimento.</span>
+                </div>
+                <b>$15.000</b>
+              </label>
+            </div>
+
+            <div class="modal-total-box">
+              <div>
+                <span>Total estimado</span>
+                <strong class="modal-total-value">$30.000</strong>
+              </div>
+              <small
+                >El valor puede variar según tiempo de estadía y necesidades de
+                la mascota.</small
+              >
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary modal-prev-step" type="button">
+                Volver
+              </button>
+              <button
+                class="btn btn--primary schedule-service-btn"
+                type="button"
+              >
+                Agendar cita
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL EXÁMENES -->
+    <div class="service-modal" id="modal-examenes" aria-hidden="true">
+      <div class="service-modal__overlay close-service-modal"></div>
+
+      <section class="service-modal__content">
+        <button class="service-modal__close close-service-modal">×</button>
+
+        <div class="modal-inner">
+          <div class="service-modal__header">
+            <span class="eyebrow">Exámenes básicos</span>
+            <h2>Apoyo diagnóstico para tu mascota</h2>
+            <p>
+              Selecciona el centro y los servicios de consulta o seguimiento de
+              resultados.
+            </p>
+          </div>
+
+          <div class="modal-steps">
+            <span class="modal-step is-active" data-step-indicator="1"
+              >1. Centro</span
+            >
+            <span class="modal-step" data-step-indicator="2">2. Servicios</span>
+          </div>
+
+          <div class="modal-step-panel is-active" data-step="1">
+            <div class="modal-section-title">
+              <h3>Elige el comercio</h3>
+              <span>Selecciona una opción</span>
+            </div>
+
+            <div class="business-selector">
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="examenes-comercio"
+                  value="Veterinaria Vida Animal"
+                  checked
+                />
+                <div class="business-option__content">
+                  <strong>Veterinaria Vida Animal</strong>
+                  <span>1.2 km · Resultados descriptivos · ★★★★★ 4.8</span>
+                  <small
+                    >Registro y orientación sobre resultados básicos.</small
+                  >
+                </div>
+              </label>
+
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="examenes-comercio"
+                  value="Centro Diagnóstico PetCare"
+                />
+                <div class="business-option__content">
+                  <strong>Centro Diagnóstico PetCare</strong>
+                  <span>2.7 km · Agenda previa · ★★★★☆ 4.4</span>
+                  <small>Apoyo diagnóstico y seguimiento clínico básico.</small>
+                </div>
+              </label>
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary close-service-modal">
+                Cancelar
+              </button>
+              <button class="btn btn--primary modal-next-step" type="button">
+                Continuar
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-step-panel" data-step="2">
+            <div class="modal-section-title">
+              <h3>Selecciona servicios</h3>
+              <span>Puedes elegir varios</span>
+            </div>
+
+            <div class="priced-services-list">
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="25000"
+                  checked
+                />
+                <div>
+                  <strong>Registro de resultado básico</strong>
+                  <span>Cargue o registro del resultado para consulta.</span>
+                </div>
+                <b>$25.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="35000"
+                />
+                <div>
+                  <strong>Consulta de resultado</strong>
+                  <span>Revisión descriptiva del resultado obtenido.</span>
+                </div>
+                <b>$35.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="45000"
+                />
+                <div>
+                  <strong>Orientación veterinaria</strong>
+                  <span
+                    >Explicación profesional y recomendaciones generales.</span
+                  >
+                </div>
+                <b>$45.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="30000"
+                />
+                <div>
+                  <strong>Seguimiento clínico básico</strong>
+                  <span
+                    >Control posterior asociado al resultado consultado.</span
+                  >
+                </div>
+                <b>$30.000</b>
+              </label>
+            </div>
+
+            <div class="modal-total-box">
+              <div>
+                <span>Total estimado</span>
+                <strong class="modal-total-value">$25.000</strong>
+              </div>
+              <small
+                >El valor puede variar según tipo de examen, centro y necesidad
+                de orientación.</small
+              >
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary modal-prev-step" type="button">
+                Volver
+              </button>
+              <button
+                class="btn btn--primary schedule-service-btn"
+                type="button"
+              >
+                Agendar cita
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL SERVICIOS FÚNEBRES -->
+    <div class="service-modal" id="modal-funebres" aria-hidden="true">
+      <div class="service-modal__overlay close-service-modal"></div>
+
+      <section class="service-modal__content">
+        <button class="service-modal__close close-service-modal">×</button>
+
+        <div class="modal-inner">
+          <div class="service-modal__header">
+            <span class="eyebrow">Servicios fúnebres</span>
+            <h2>Acompañamiento en un momento difícil</h2>
+            <p>
+              Selecciona el servicio y el tipo de acompañamiento que deseas para
+              despedir a tu mascota con respeto y dignidad.
+            </p>
+          </div>
+
+          <div class="modal-steps">
+            <span class="modal-step is-active" data-step-indicator="1"
+              >1. Servicio</span
+            >
+            <span class="modal-step" data-step-indicator="2">2. Detalles</span>
+          </div>
+
+          <!-- PASO 1 -->
+          <div class="modal-step-panel is-active" data-step="1">
+            <div class="modal-section-title">
+              <h3>Elige el proveedor</h3>
+              <span>Opciones disponibles</span>
+            </div>
+
+            <div class="business-selector">
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="funebres-comercio"
+                  value="Mascotas Paz"
+                  checked
+                />
+                <div class="business-option__content">
+                  <strong>Funeraria Mascotas Paz</strong>
+                  <span>Atención inmediata · ★★★★★ 4.9</span>
+                  <small
+                    >Acompañamiento respetuoso y servicios completos.</small
+                  >
+                </div>
+              </label>
+
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="funebres-comercio"
+                  value="Huellas Eternas"
+                />
+                <div class="business-option__content">
+                  <strong>Huellas Eternas</strong>
+                  <span>Atención programada · ★★★★★ 4.8</span>
+                  <small
+                    >Servicios personalizados y despedidas familiares.</small
+                  >
+                </div>
+              </label>
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary close-service-modal">
+                Cancelar
+              </button>
+              <button class="btn btn--primary modal-next-step" type="button">
+                Continuar
+              </button>
+            </div>
+          </div>
+
+          <!-- PASO 2 -->
+          <div class="modal-step-panel" data-step="2">
+            <div class="modal-section-title">
+              <h3>Selecciona servicios</h3>
+              <span>Puedes elegir varios</span>
+            </div>
+
+            <div class="priced-services-list">
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="150000"
+                  checked
+                />
+                <div>
+                  <strong>Cremación</strong>
+                  <span>Proceso respetuoso con entrega posterior.</span>
+                </div>
+                <b>$150.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="80000"
+                />
+                <div>
+                  <strong>Servicio de despedida</strong>
+                  <span>Espacio para acompañamiento familiar.</span>
+                </div>
+                <b>$80.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="40000"
+                />
+                <div>
+                  <strong>Transporte</strong>
+                  <span>Recogida y traslado seguro.</span>
+                </div>
+                <b>$40.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="50000"
+                />
+                <div>
+                  <strong>Entrega de cenizas</strong>
+                  <span>Incluye urna básica.</span>
+                </div>
+                <b>$50.000</b>
+              </label>
+            </div>
+
+            <div class="modal-total-box">
+              <div>
+                <span>Total estimado</span>
+                <strong class="modal-total-value">$150.000</strong>
+              </div>
+              <small
+                >El valor puede variar según condiciones del servicio y
+                requerimientos específicos.</small
+              >
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary modal-prev-step" type="button">
+                Volver
+              </button>
+              <button
+                class="btn btn--primary schedule-service-btn"
+                type="button"
+              >
+                Continuar
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL ADIESTRAMIENTO -->
+    <div class="service-modal" id="modal-adiestramiento" aria-hidden="true">
+      <div class="service-modal__overlay close-service-modal"></div>
+
+      <section class="service-modal__content">
+        <button class="service-modal__close close-service-modal">×</button>
+
+        <div class="modal-inner">
+          <div class="service-modal__header">
+            <span class="eyebrow">Adiestramiento</span>
+            <h2>Entrenamiento y conducta para tu mascota</h2>
+            <p>
+              Selecciona el entrenador y el tipo de acompañamiento que necesitas
+              para mejorar la convivencia.
+            </p>
+          </div>
+
+          <div class="modal-steps">
+            <span class="modal-step is-active" data-step-indicator="1"
+              >1. Entrenador</span
+            >
+            <span class="modal-step" data-step-indicator="2">2. Servicios</span>
+          </div>
+
+          <div class="modal-step-panel is-active" data-step="1">
+            <div class="modal-section-title">
+              <h3>Elige el comercio</h3>
+              <span>Opciones disponibles</span>
+            </div>
+
+            <div class="business-selector">
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="adiestramiento-comercio"
+                  value="Entrenamiento Canino Local"
+                  checked
+                />
+                <div class="business-option__content">
+                  <strong>Entrenamiento Canino Local</strong>
+                  <span>Clases personalizadas · ★★★★★ 4.7</span>
+                  <small
+                    >Obediencia básica, socialización y corrección de
+                    conducta.</small
+                  >
+                </div>
+              </label>
+
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="adiestramiento-comercio"
+                  value="Escuela Canina Huella Firme"
+                />
+                <div class="business-option__content">
+                  <strong>Escuela Canina Huella Firme</strong>
+                  <span>Programas por niveles · ★★★★☆ 4.6</span>
+                  <small
+                    >Entrenamiento progresivo para perros jóvenes y
+                    adultos.</small
+                  >
+                </div>
+              </label>
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary close-service-modal">
+                Cancelar
+              </button>
+              <button class="btn btn--primary modal-next-step" type="button">
+                Continuar
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-step-panel" data-step="2">
+            <div class="modal-section-title">
+              <h3>Selecciona servicios</h3>
+              <span>Puedes elegir varios</span>
+            </div>
+
+            <div class="priced-services-list">
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="45000"
+                  checked
+                />
+                <div>
+                  <strong>Obediencia básica</strong>
+                  <span>Comandos esenciales y hábitos de convivencia.</span>
+                </div>
+                <b>$45.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="50000"
+                />
+                <div>
+                  <strong>Socialización</strong>
+                  <span
+                    >Interacción controlada con otros animales y personas.</span
+                  >
+                </div>
+                <b>$50.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="65000"
+                />
+                <div>
+                  <strong>Corrección de conducta</strong>
+                  <span
+                    >Trabajo sobre ansiedad, ladridos o comportamientos
+                    difíciles.</span
+                  >
+                </div>
+                <b>$65.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="80000"
+                />
+                <div>
+                  <strong>Entrenamiento avanzado</strong>
+                  <span
+                    >Rutinas especializadas y seguimiento personalizado.</span
+                  >
+                </div>
+                <b>$80.000</b>
+              </label>
+            </div>
+
+            <div class="modal-total-box">
+              <div>
+                <span>Total estimado</span>
+                <strong class="modal-total-value">$45.000</strong>
+              </div>
+              <small
+                >El valor puede variar según duración, número de sesiones y
+                comportamiento de la mascota.</small
+              >
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary modal-prev-step" type="button">
+                Volver
+              </button>
+              <button
+                class="btn btn--primary schedule-service-btn"
+                type="button"
+              >
+                Agendar cita
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- MODAL TRANSPORTE -->
+    <div class="service-modal" id="modal-transporte" aria-hidden="true">
+      <div class="service-modal__overlay close-service-modal"></div>
+
+      <section class="service-modal__content">
+        <button class="service-modal__close close-service-modal">×</button>
+
+        <div class="modal-inner">
+          <div class="service-modal__header">
+            <span class="eyebrow">Transporte de mascotas</span>
+            <h2>Traslados seguros para tu mascota</h2>
+            <p>
+              Selecciona el proveedor de transporte y el tipo de traslado que
+              necesitas.
+            </p>
+          </div>
+
+          <div class="modal-steps">
+            <span class="modal-step is-active" data-step-indicator="1"
+              >1. Transporte</span
+            >
+            <span class="modal-step" data-step-indicator="2">2. Servicios</span>
+          </div>
+
+          <div class="modal-step-panel is-active" data-step="1">
+            <div class="modal-section-title">
+              <h3>Elige el comercio</h3>
+              <span>Opciones disponibles</span>
+            </div>
+
+            <div class="business-selector">
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="transporte-comercio"
+                  value="Pet Taxi Local"
+                  checked
+                />
+                <div class="business-option__content">
+                  <strong>Pet Taxi Local</strong>
+                  <span>Traslados programados · ★★★★☆ 4.6</span>
+                  <small
+                    >Servicio local para citas veterinarias, peluquería y
+                    guardería.</small
+                  >
+                </div>
+              </label>
+
+              <label class="business-option">
+                <input
+                  type="radio"
+                  name="transporte-comercio"
+                  value="Ruta Mascota Segura"
+                />
+                <div class="business-option__content">
+                  <strong>Ruta Mascota Segura</strong>
+                  <span>Recogida y regreso · ★★★★★ 4.8</span>
+                  <small
+                    >Transporte especializado con acompañamiento y manejo
+                    seguro.</small
+                  >
+                </div>
+              </label>
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary close-service-modal">
+                Cancelar
+              </button>
+              <button class="btn btn--primary modal-next-step" type="button">
+                Continuar
+              </button>
+            </div>
+          </div>
+
+          <div class="modal-step-panel" data-step="2">
+            <div class="modal-section-title">
+              <h3>Selecciona servicios</h3>
+              <span>Puedes elegir varios</span>
+            </div>
+
+            <div class="priced-services-list">
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="30000"
+                  checked
+                />
+                <div>
+                  <strong>Transporte a veterinaria</strong>
+                  <span>Traslado seguro hacia consulta o control médico.</span>
+                </div>
+                <b>$30.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="28000"
+                />
+                <div>
+                  <strong>Transporte a guardería</strong>
+                  <span>Traslado hacia centro de cuidado o estadía.</span>
+                </div>
+                <b>$28.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="50000"
+                />
+                <div>
+                  <strong>Recogida y regreso</strong>
+                  <span>Servicio completo ida y vuelta.</span>
+                </div>
+                <b>$50.000</b>
+              </label>
+
+              <label class="priced-service-card">
+                <input
+                  type="checkbox"
+                  class="service-price-check"
+                  data-price="70000"
+                />
+                <div>
+                  <strong>Traslado especial</strong>
+                  <span
+                    >Traslados fuera de zona o con condiciones especiales.</span
+                  >
+                </div>
+                <b>$70.000</b>
+              </label>
+            </div>
+
+            <div class="modal-total-box">
+              <div>
+                <span>Total estimado</span>
+                <strong class="modal-total-value">$30.000</strong>
+              </div>
+              <small
+                >El valor puede variar según distancia, horario y condiciones
+                del traslado.</small
+              >
+            </div>
+
+            <div class="service-modal__footer">
+              <button class="btn btn--secondary modal-prev-step" type="button">
+                Volver
+              </button>
+              <button
+                class="btn btn--primary schedule-service-btn"
+                type="button"
+              >
+                Agendar cita
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Mundo Mascota Local</h2>
+          <p>
+            Servicios de cuidado, salud y bienestar para mascotas comunes en tu
+            comunidad.
+          </p>
+        </div>
+        <div>
+          <h3>Servicios</h3>
+          <a href="servicios.html">Veterinaria</a>
+          <a href="servicios.html">Peluquería</a>
+          <a href="servicios.html">Guardería</a>
+        </div>
+        <div>
+          <h3>Plataforma</h3>
+          <a href="login.html">Ingresar</a>
+          <a href="registro.html">Crear cuenta</a>
+          <a href="agendar.html">Agendar cita</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/servicios.js"></script>
+  </body>
+</html>
