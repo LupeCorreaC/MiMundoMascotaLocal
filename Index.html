@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo Mascota Local | Servicios para mascotas</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a
+          href="index.html"
+          class="brand"
+          aria-label="Inicio Mundo Mascota Local"
+        >
+          <img
+            src="img/logo-mundo-mascota.png"
+            alt="Logo Mundo Mascota Local"
+            class="brand__logo"
+          />
+          <span class="brand__name">Mundo Mascota Local</span>
+        </a>
+
+        <button class="navbar__toggle" aria-label="Abrir menú de navegación">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="navbar__menu">
+          <li><a href="index.html" class="navbar__link active">Inicio</a></li>
+          <li><a href="servicios.html" class="navbar__link">Servicios</a></li>
+          <li><a href="agendar.html" class="navbar__link">Agendar cita</a></li>
+          <li><a href="login.html" class="navbar__link">Ingresar</a></li>
+          <li>
+            <a href="registro.html" class="btn btn--primary">Registrarse</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <span class="eyebrow"
+              >Plataforma hiperlocal de servicios para mascotas</span
+            >
+            <h1>
+              Encuentra atención, cuidado y bienestar para tu mascota en un solo
+              lugar.
+            </h1>
+            <p>
+              Conecta con veterinarias, peluquerías, guarderías y profesionales
+              cercanos. Consulta servicios, compara opciones y agenda citas de
+              forma sencilla.
+            </p>
+            <div class="hero__actions">
+              <a href="servicios.html" class="btn btn--primary"
+                >Buscar servicios</a
+              >
+              <a href="agendar.html" class="btn btn--secondary"
+                >Agendar una cita</a
+              >
+            </div>
+          </div>
+
+          <div class="hero__media">
+            <img
+              src="img/hero-mascotas.jpg"
+              alt="Veterinaria atendiendo una mascota"
+            />
+            <div class="hero-card">
+              <strong>+ Servicios locales</strong>
+              <span
+                >Veterinaria · Peluquería · Guardería · Exámenes básicos</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services-overview">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Servicios principales</span>
+            <h2>Todo lo esencial para el cuidado de mascotas comunes</h2>
+            <p>
+              Una experiencia centralizada para encontrar servicios de salud,
+              cuidado, higiene y estadía.
+            </p>
+          </div>
+
+          <div class="cards-grid">
+            <article class="service-card">
+              <img
+                src="img/consulta-veterinaria.jpg"
+                alt="Consulta veterinaria"
+              />
+              <div class="service-card__body">
+                <h3>Consulta veterinaria</h3>
+                <p>
+                  Atención médica básica, orientación profesional, revisión
+                  general y seguimiento.
+                </p>
+                <a href="servicios.html">Ver opciones</a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="img/peluqueria-canina.jpg"
+                alt="Peluquería para mascotas"
+              />
+              <div class="service-card__body">
+                <h3>Peluquería y baño</h3>
+                <p>
+                  Baño, corte, limpieza, higiene y servicios estéticos para
+                  mascotas comunes.
+                </p>
+                <a href="servicios.html">Ver opciones</a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <img
+                src="img/guarderia-mascotas.jpg"
+                alt="Guardería para mascotas"
+              />
+              <div class="service-card__body">
+                <h3>Guardería y estadía</h3>
+                <p>
+                  Cuidado temporal, acompañamiento y espacios seguros durante el
+                  día o por estadía.
+                </p>
+                <a href="servicios.html">Ver opciones</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section how-it-works">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Proceso simple</span>
+            <h2>Cómo funciona Mundo Mascota Local</h2>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <span>01</span>
+              <h3>Busca el servicio</h3>
+              <p>
+                Filtra por tipo de servicio, ubicación, disponibilidad y
+                valoración.
+              </p>
+            </article>
+            <article class="step-card">
+              <span>02</span>
+              <h3>Compara negocios</h3>
+              <p>
+                Consulta perfiles, horarios, servicios ofrecidos y datos
+                relevantes.
+              </p>
+            </article>
+            <article class="step-card">
+              <span>03</span>
+              <h3>Agenda tu cita</h3>
+              <p>Selecciona fecha, hora, servicio y profesional disponible.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-businesses">
+        <div class="container">
+          <div class="section-heading section-heading--split">
+            <div>
+              <span class="eyebrow">Negocios destacados</span>
+              <h2>Servicios cercanos para tu mascota</h2>
+            </div>
+            <a href="servicios.html" class="btn btn--secondary">Ver todos</a>
+          </div>
+
+          <div class="business-grid">
+            <article class="business-card">
+              <img src="img/veterinaria-1.jpg" alt="Veterinaria local" />
+              <div class="business-card__body">
+                <div class="business-card__rating">★★★★★ <span>4.8</span></div>
+                <h3>Veterinaria Vida Animal</h3>
+                <p>
+                  Consulta general, vacunación, controles y exámenes básicos.
+                </p>
+                <span class="business-card__location"
+                  >A 1.2 km · Zona local</span
+                >
+              </div>
+            </article>
+
+            <article class="business-card">
+              <img
+                src="img/peluqueria-canina.jpg"
+                alt="Peluquería canina local"
+              />
+              <div class="business-card__body">
+                <div class="business-card__rating">★★★★☆ <span>4.6</span></div>
+                <h3>Peluquería Huellitas</h3>
+                <p>Baño, corte, limpieza de oídos y cuidado estético.</p>
+                <span class="business-card__location"
+                  >A 800 m · Zona local</span
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-card">
+          <div>
+            <span class="eyebrow">Para comercios y profesionales</span>
+            <h2>Haz visible tu servicio dentro de la comunidad.</h2>
+            <p>
+              Publica tus servicios, organiza tu agenda y facilita que nuevos
+              clientes te encuentren.
+            </p>
+          </div>
+          <a href="registro.html" class="btn btn--primary"
+            >Registrar mi servicio</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Mundo Mascota Local</h2>
+          <p>
+            Servicios de cuidado, salud y bienestar para mascotas comunes en tu
+            comunidad.
+          </p>
+        </div>
+        <div>
+          <h3>Servicios</h3>
+          <a href="servicios.html">Veterinaria</a>
+          <a href="servicios.html">Peluquería</a>
+          <a href="servicios.html">Guardería</a>
+        </div>
+        <div>
+          <h3>Plataforma</h3>
+          <a href="login.html">Ingresar</a>
+          <a href="registro.html">Crear cuenta</a>
+          <a href="agendar.html">Agendar cita</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

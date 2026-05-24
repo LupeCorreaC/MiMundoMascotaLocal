@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro | Mundo Mascota Local</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand">
+          <img
+            src="img/logo-mundo-mascota.png"
+            alt="Logo Mundo Mascota Local"
+            class="brand__logo"
+          />
+          <span class="brand__name">Mundo Mascota Local</span>
+        </a>
+
+        <ul class="navbar__menu">
+          <li><a href="index.html" class="navbar__link">Inicio</a></li>
+          <li><a href="servicios.html" class="navbar__link">Servicios</a></li>
+          <li><a href="agendar.html" class="navbar__link">Agendar cita</a></li>
+          <li><a href="login.html" class="navbar__link">Ingresar</a></li>
+          <li>
+            <a href="registro.html" class="btn btn--primary">Registrarse</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="auth-section">
+        <div class="container auth-layout">
+          <div class="auth-info">
+            <span class="eyebrow">Crear cuenta</span>
+            <h1>Únete a Mundo Mascota Local</h1>
+            <p>
+              Crea tu cuenta para agendar servicios, consultar tus citas y
+              encontrar comercios especializados para el cuidado de tu mascota.
+            </p>
+          </div>
+
+          <form class="auth-card" id="registerForm">
+            <h2>Registro de usuario</h2>
+
+            <label class="form-label" for="registerName">Nombre completo</label>
+            <input
+              class="form-control"
+              type="text"
+              id="registerName"
+              placeholder="Tu nombre"
+              required
+            />
+
+            <label class="form-label" for="registerEmail"
+              >Correo electrónico</label
+            >
+            <input
+              class="form-control"
+              type="email"
+              id="registerEmail"
+              placeholder="correo@ejemplo.com"
+              required
+            />
+
+            <label class="form-label" for="registerPhone"
+              >Número de contacto</label
+            >
+            <input
+              class="form-control"
+              type="tel"
+              id="registerPhone"
+              placeholder="Ej: 3001234567"
+              required
+            />
+
+            <label class="form-label" for="registerPassword">Contraseña</label>
+            <input
+              class="form-control"
+              type="password"
+              id="registerPassword"
+              placeholder="Mínimo 6 caracteres"
+              required
+            />
+
+            <label class="form-label" for="registerRole">Tipo de cuenta</label>
+            <select class="form-control" id="registerRole" required>
+              <option value="">Selecciona una opción</option>
+              <option value="cliente">Cliente</option>
+              <option value="comercio">Comercio / Prestador de servicio</option>
+            </select>
+
+            <button class="btn btn--primary auth-submit" type="submit">
+              Crear cuenta
+            </button>
+
+            <p class="auth-link">
+              ¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/registro.js"></script>
+  </body>
+</html>
