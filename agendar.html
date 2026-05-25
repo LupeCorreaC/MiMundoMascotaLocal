@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendar cita | Mundo Mascota Local</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand">
+          <img src="img/logo-mundo-mascota.png" alt="Logo Mundo Mascota Local" class="brand__logo" />
+          <span class="brand__name">Mundo Mascota Local</span>
+        </a>
+
+        <ul class="navbar__menu">
+          <li><a href="index.html" class="navbar__link">Inicio</a></li>
+          <li><a href="servicios.html" class="navbar__link">Servicios</a></li>
+          <li><a href="agendar.html" class="navbar__link active">Agendar cita</a></li>
+          <li><a href="login.html" class="navbar__link">Ingresar</a></li>
+          <li><a href="registro.html" class="btn btn--primary">Registrarse</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="appointment-section">
+        <div class="container">
+          <div class="section-heading">
+            <span class="eyebrow">Agenda tu cita</span>
+            <h1>Selecciona servicio, fecha y horario disponibles</h1>
+            <p>
+              Elige el servicio que necesitas, revisa horarios libres y confirma tu cita para atender a tu mascota.
+            </p>
+          </div>
+
+          <div class="appointment-layout">
+            <aside class="appointment-summary" id="serviceSummary">
+              <h2>Resumen del servicio</h2>
+              <div class="summary-card" id="summaryCard">
+                <p class="muted">Selecciona un servicio desde Servicios o utiliza las opciones aquí.</p>
+              </div>
+            </aside>
+
+            <section class="appointment-form-section">
+              <form class="appointment-card" id="appointmentForm">
+                <h2>Confirmar cita</h2>
+
+                <label class="form-label" for="serviceSelect">Servicio</label>
+                <select class="form-control" id="serviceSelect" required>
+                  <option value="">Selecciona un servicio</option>
+                </select>
+
+                <label class="form-label" for="petName">Nombre de la mascota</label>
+                <input class="form-control" type="text" id="petName" placeholder="Ej: Luna" required />
+
+                <label class="form-label" for="appointmentDate">Fecha</label>
+                <input class="form-control" type="date" id="appointmentDate" required />
+
+                <label class="form-label" for="appointmentTime">Horario</label>
+                <select class="form-control" id="appointmentTime" required>
+                  <option value="">Selecciona un horario</option>
+                </select>
+
+                <div class="form-message" id="bookingMessage" aria-live="polite"></div>
+
+                <button class="btn btn--primary auth-submit" type="submit">Confirmar cita</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/agendar.js"></script>
+  </body>
+</html>

@@ -24,6 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.getItem("mundoMascotaUsuarioActivo"),
   );
 
+  if (navbarMenu && !activeUser) {
+    const agendarLink = navbarMenu.querySelector('a[href="agendar.html"]');
+    if (agendarLink) {
+      agendarLink.parentElement.remove();
+    }
+  }
+
   if (navbarMenu && activeUser) {
     navbarMenu
       .querySelectorAll('a[href="login.html"], a[href="registro.html"]')
@@ -37,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const citasItem = document.createElement("li");
       citasItem.innerHTML = `<a href="mis-citas.html" class="navbar__link">Mis citas</a>`;
       navbarMenu.appendChild(citasItem);
+      if (currentPage === "mis-citas.html") {
+        citasItem.querySelector("a").classList.add("active");
+      }
     }
 
     const userItem = document.createElement("li");

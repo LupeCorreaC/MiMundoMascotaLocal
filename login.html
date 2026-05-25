@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingresar | Mundo Mascota Local</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="index.html" class="brand">
+          <img src="img/logo-mundo-mascota.png" alt="Logo Mundo Mascota Local" class="brand__logo" />
+          <span class="brand__name">Mundo Mascota Local</span>
+        </a>
+
+        <ul class="navbar__menu">
+          <li><a href="index.html" class="navbar__link">Inicio</a></li>
+          <li><a href="servicios.html" class="navbar__link">Servicios</a></li>
+          <li><a href="agendar.html" class="navbar__link">Agendar cita</a></li>
+          <li><a href="login.html" class="navbar__link active">Ingresar</a></li>
+          <li><a href="registro.html" class="btn btn--primary">Registrarse</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="auth-section">
+        <div class="container auth-layout">
+          <div class="auth-info">
+            <span class="eyebrow">Bienvenido de vuelta</span>
+            <h1>Inicia sesión para agendar tu cita</h1>
+            <p>
+              Ingresa con tu correo y contraseña para acceder a tu perfil, ver tus citas y reservar servicios para tu mascota.
+            </p>
+          </div>
+
+          <form class="auth-card" id="loginForm">
+            <h2>Ingreso de usuario</h2>
+
+            <label class="form-label" for="loginEmail">Correo electrónico</label>
+            <input class="form-control" type="email" id="loginEmail" placeholder="correo@ejemplo.com" required />
+
+            <label class="form-label" for="loginPassword">Contraseña</label>
+            <input class="form-control" type="password" id="loginPassword" placeholder="Tu contraseña" required />
+
+            <button class="btn btn--primary auth-submit" type="submit">Ingresar</button>
+
+            <p class="auth-link">
+              ¿No tienes cuenta? <a href="registro.html">Regístrate</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/navbar.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>
